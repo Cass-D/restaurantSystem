@@ -1,0 +1,259 @@
+body{
+  background-color: rgb(237, 237, 237);
+}
+/*头部导航*/
+.navbar-fixed-top{
+    background-color: #2e6da4;
+}
+.navFont{
+    color: #fffbfd;
+}
+/*左边手风琴导航栏*/
+#main-nav {
+    margin-left: 1px;
+}
+#main-nav.nav-tabs.nav-stacked > li > a {
+    padding: 10px 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2E6DA4;
+    background: #E9E9E9;
+    background: -moz-linear-gradient(top, #FAFAFA 0%, #E9E9E9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FAFAFA), color-stop(100%, #E9E9E9));
+    background: -webkit-linear-gradient(top, #FAFAFA 0%, #E9E9E9 100%);
+    background: -o-linear-gradient(top, #FAFAFA 0%, #E9E9E9 100%);
+    background: -ms-linear-gradient(top, #FAFAFA 0%, #E9E9E9 100%);
+    background: linear-gradient(top, #FAFAFA 0%, #E9E9E9 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";
+    border: 1px solid #D5D5D5;
+    border-radius: 4px;
+}
+#main-nav.nav-tabs.nav-stacked > li > a > span {
+    color: #2E6DA4;
+}
+#main-nav.nav-tabs.nav-stacked > li > a:hover {
+    color: #FFF;
+    background: #2E6DA4;
+    background: -moz-linear-gradient(top, #2E6DA4 0%, #2E6DA4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2E6DA4), color-stop(100%, #2E6DA4));
+    background: -webkit-linear-gradient(top, #2E6DA4 0%, #2E6DA4 100%);
+    background: -o-linear-gradient(top, #2E6DA4 0%, #2E6DA4 100%);
+    background: -ms-linear-gradient(top, #2E6DA4 0%, #2E6DA4 100%);
+    background: linear-gradient(top, #2E6DA4 0%, #2E6DA4 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#4A515B', endColorstr='#3C4049');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#4A515B', endColorstr='#3C4049')";
+    border-color: #2E6DA4;
+}
+
+#main-nav.nav-tabs.nav-stacked > li.active > a,
+#main-nav.nav-tabs.nav-stacked > li > a:hover > span {
+    color: #FFF;
+}
+
+#main-nav.nav-tabs.nav-stacked > li {
+    margin-bottom: 4px;
+}
+/*定义二级菜单样式*/
+
+.secondmenu a {
+    font-size: 15px;
+    color: #4A515B;
+    text-align: center;
+}
+
+.navbar-static-top {
+    background-color: #212121;
+    margin-bottom: 5px;
+}
+
+.navbar-brand {
+    background: url('') no-repeat 10px 8px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 50px;
+    color: #fff;
+}
+
+.sidebar{
+	position: fixed;
+    /*top: 51px;*/
+   /* bottom: 0;
+    left: 0;*/
+    /*z-index: 1000;*/
+    /*display: block;*/
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #a3b4f8;
+    /*border-right: 1px solid #eee;*/
+}
+/*右边*/
+.main{
+    padding-right: 40px;
+    padding-left: 40px;
+    padding:20px;
+}
+#checkOut{
+    padding:20px; 
+}
+
+
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+.table-responsive .table-striped{
+	cursor: pointer;
+	 font-size: 16px;
+}
+/*实时公告的输入框*/
+textarea[class=notice]{
+	margin-top: 10px;
+	margin-left: 0px;
+	width: 512px;
+	height: 256px;
+}
+/*系统头部名字css动画*/
+strong[class=systemTitle]{
+    -webkit-transform:translate(60px);
+    -webkit-animation:animations 4s ease-out;
+    -moz-transform:translate(55px);
+    -moz-animation:animations 4s ease-out;
+    -o-transform:translate(55px);
+    -o-animation:animations 4s ease-out;
+    -ms-transform:translate(55px);
+    -ms-animation:animations 4s ease-out ;
+    transform:translate(55px);
+    animation:animations 4s ease-out ;
+}
+@-webkit-keyframes animations{
+    0%{-webkit-transform:translate(0);opacity:0;}
+    50%{-webkit-transform:translate(30px);opacity:1;}
+    70%{-webkit-transform:translate(35px);opacity:1;}
+    100%{-webkit-transform:translate(60px);opacity:0;}
+}
+@-moz-keyframes animations{
+    0%{-moz-transform:translate(0);opacity:0;}
+    50%{-moz-transform:translate(30px);opacity:1;}
+    70%{-moz-transform:translate(35px);opacity:1;}
+    100%{-moz-transform:translate(60px);opacity:0;}
+}
+@-o-keyframes animations{
+    0%{-o-transform:translate(0);opacity:0;}
+    50%{-o-transform:translate(30px);opacity:1;}
+    70%{-o-transform:translate(35px);opacity:1;}
+    100%{-o-transform:translate(60px);opacity:0;}
+}
+@-ms-keyframes animations{
+    0%{-ms-transform:translate(0);opacity:0;}
+    50%{-ms-transform:translate(30px);opacity:1;}
+    70%{-ms-transform:translate(35px);opacity:1;}
+    100%{-ms-transform:translate(60px);opacity:0;}
+}
+@keyframes animations{
+    0%{transform:translate(0);opacity:0;}
+    50%{transform:translate(30px);opacity:1;}
+    70%{transform:translate(35px);opacity:1;}
+    100%{transform:translate(60px);opacity:0;}
+}
+footer{
+    text-align:center ;
+}
+/*管理员结账页面更多菜品按钮动画*/
+#moreDishes{
+    width: 100px;
+    height: 30px;
+    font-size: 16px !important;
+    transition-property:all;
+    transition-duration:.2s;
+    transition-timing-function:ease-in;
+    transition-delay:.1s;
+}
+#moreDishes:hover{
+    width: 110px;
+    height: 40px;
+    background-color: #337AB7;
+    color: #f9fff9;
+    -webkit-transform:translateX(10px);
+    -moz-transform:translateX(10px);
+    -ms-transform:translateX(10px);
+}
+/*添加员工和添加菜品按钮动画*/
+.addUserAndDishes{
+
+    width:80px;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition-property:all;
+    transition-duration:.2s;
+    transition-timing-function:ease-in;
+    transition-delay:.1s;
+}
+.addUserAndDishes:hover{
+    width: 90px;
+    -webkit-transform:translateX(10px);
+    -moz-transform:translateX(10px);
+    -ms-transform:translateX(10px);
+
+}
+/*table内容居中*/
+td[class=tableCenter],
+th[class=tableCenter]{
+
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center ;
+    /*text-align:center;
+    vertical-align:middle;
+    line-height: 80px;*/
+}
+/*服务员界面菜品图片规格*/
+.waiterDishesImg{
+    width: 175px;
+    height: 175px;
+    border-radius: 35px;
+}
+/*input[type=text]{*/
+    /*text-align: center;*/
+/*}*/
+table[class=dishesTable],
+td[class=dishesTable]{
+    border: 1px solid #A9A9A9;
+    /*width:400px;*/
+    padding:5px;
+    background:#eee;
+    -webkit-box-shadow:3px 3px 3px 7px rgba(0,0,0,.6);
+    box-shadow:3px 3px 3px 7px rgba(0,0,0,.6);
+    display: table-cell !important;
+    vertical-align: middle !important;
+}
+/*确认下单按钮*/
+p[id=makeOrder]{
+    margin:10px auto auto 60px;
+    
+}
+/*管理员发布实时公告提交按钮*/
+#submitBtn{
+    margin-left: 423px;
+}
